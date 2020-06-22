@@ -141,7 +141,7 @@ header {
 
 .btn-wrapper .btn:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
 .btn-wrapper .btn:active {
@@ -196,7 +196,40 @@ header {
 	margin: 2rem;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	font-family: arial narrow;
+	transition: transform .5s;
 }
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.card:nth-child(1) {
+	animation: fadeIn .5s .5s backwards;
+}
+
+.card:nth-child(2) {
+	animation: fadeIn .5s .1s backwards;
+}
+
+.card:nth-child(3) {
+	animation: fadeIn .5s 1.5s backwards;
+}
+
+.card:nth-child(4) {
+	animation: fadeIn .5s .2s backwards;
+}
+
+.card:hover{
+	transform: scale(1.05);
+}
+}
+
 
 .card:hover	{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
